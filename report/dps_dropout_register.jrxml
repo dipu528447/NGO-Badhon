@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dps_dropout_register" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="6.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="578"/>
+	<field name="to" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="groupno" class="java.lang.String"/>
+	<field name="memberno" class="java.lang.String"/>
+	<field name="drop_out" class="java.lang.String"/>
+	<field name="from" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="177" y="1" width="234" height="51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="36"/>
+				</textElement>
+				<text><![CDATA[বাঁধন]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="204" y="38" width="196" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="SolaimanLipi" size="12"/>
+				</textElement>
+				<text><![CDATA[বাঁধন ক্ষুদ্র ব্যবসায়ী সমবায় সমিতি লিঃ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="200" y="0" width="196" height="34" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="20"/>
+				</textElement>
+				<text><![CDATA[বি এস এস প্রত্যাহার রেজিষ্টার]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="418" y="12" width="60" height="22" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{from}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="479" y="22" width="8" height="1"/>
+			</line>
+			<textField>
+				<reportElement mode="Transparent" x="487" y="12" width="66" height="22" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{to}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="2" width="109" height="23" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<text><![CDATA[তারিখ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="327" y="2" width="140" height="23" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<text><![CDATA[সদস্য নং]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="110" y="2" width="217" height="23" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<text><![CDATA[নাম]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="467" y="2" width="88" height="23" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<text><![CDATA[জন]]></text>
+			</staticText>
+			<line>
+				<reportElement x="108" y="2" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="325" y="2" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="465" y="2" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="553" y="2" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="2" width="1" height="23"/>
+			</line>
+			<line>
+				<reportElement x="0" y="3" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="24" width="553" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<textField>
+				<reportElement mode="Transparent" x="326" y="0" width="139" height="15" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{memberno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="466" y="1" width="87" height="15" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{drop_out}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="109" y="1" width="217" height="15" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="1" y="1" width="109" height="15" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="SolaimanLipi" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="108" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="325" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="465" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="553" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="0" width="1" height="15"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="553" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="14" width="553" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="59" y="25" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="12"/>
+				</textElement>
+				<text><![CDATA[হিসাবরক্ষক]]></text>
+			</staticText>
+			<line>
+				<reportElement x="406" y="17" width="100" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="407" y="23" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="12"/>
+				</textElement>
+				<text><![CDATA[সভাপতি]]></text>
+			</staticText>
+			<line>
+				<reportElement x="60" y="18" width="100" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="149" y="54" width="247" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Developed by:The Third Eye Soft]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="418" y="48" width="133" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
